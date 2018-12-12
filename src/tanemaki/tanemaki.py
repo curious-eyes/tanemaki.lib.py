@@ -28,6 +28,8 @@ class Tanemaki:
         来客者リスト
     """
     MOGUO_SUFFIX = 'もぐー'
+    TANEMAKI_URL = 'https://tane-maki.net'
+    TANEMAKI_URL_PRICING = TANEMAKI_URL + '/pricing/'
 
     def __init__(self):
         self.birthdt = datetime.strptime('2011-12-01 00:00:00', '%Y-%m-%d %H:%M:%S')
@@ -39,7 +41,7 @@ class Tanemaki:
     def __repr__(self):
         args = ARGS_PARSER.parse_args()
         if args.plan:
-            res = '詳しくは https://tane-maki.net/pricing/ を参照'
+            res = '料金プランは {} を参照'.format(self.TANEMAKI_URL_PRICING)
         else:
             res = '{}生まれなので、もう {} 年目'
             res = res.format(self.birthdt.strftime('%Y年%m月%d日'), self.get_years())

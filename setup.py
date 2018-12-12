@@ -12,12 +12,12 @@ with codecs_open(path.join(HERE, 'README.rst'), encoding='utf-8') as f:
 
 setup(
     name='tanemaki',
-    version='0.1.0',
+    version='0.1.1',
     description='モグ雄になれるPythonライブラリ',
     long_description=LONG_DESCRIPTION,
     url='https://github.com/curious-eyes/tanemaki.lib.py',
     author='okamoto',
-    author_email='Please contact me on github.',
+    author_email='shuhei.okamoto@gmail.com',
     license='MIT',
     # 依存ライブラリは下のリストを元にinstallされる
     install_requires=[],

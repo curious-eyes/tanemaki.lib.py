@@ -14,7 +14,7 @@ If you want to get involved in the community, feel free to join Tanemaki.
 ============
 Dependencies
 ============
-Tanemaki is compatible with Python 3.6, 3.5 and 2.7.
+Tanemaki is compatible with Python 3.6 or greater.
 
 ============
 Installation
@@ -29,10 +29,6 @@ Installing from Source
 
     $ python -m venv ./venv
     $ source ./venv/bin/activate
-
-インストール実行
-
-::
 
     $ git clone https://github.com/curious-eyes/tanemaki.lib.py.git
     $ pip install -e .
@@ -50,7 +46,7 @@ How to Use
     2011年12月01日生まれなので、もう 7 年目もぐー
 
     $ tanemaki --plan
-    詳しくは https://tane-maki.net/pricing/ を参照もぐー
+    料金プランは https://tane-maki.net/pricing/ を参照もぐー
     
 
 
@@ -69,8 +65,8 @@ import して使うと、さらに多機能です。
     >>>
     >>> len(t)    # 営業開始からの経過日数
     2561
-    >>> Tanemaki.say_moguo('エアコンを取り替える')     # もぐおになれます
-    'エアコンを取り替えるもぐー'
+    >>> Tanemaki.say_moguo('エアコンを取り替えた')     # もぐおになれます
+    'エアコンを取り替えたもぐー'
     >>>
     >>> t + 'おかも'
     'おかも さん、いらっしゃいもぐー'
